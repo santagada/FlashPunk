@@ -162,7 +162,7 @@
 		public function get angle():Number { return _angle * FP.DEG; }
 		public function set angle(value:Number):void
 		{
-			if (_angle == value) return;
+			if (_angle * FP.DEG == value) return;
 			_angle = value * FP.RAD;
 			update();
 		}
